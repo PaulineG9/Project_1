@@ -25,7 +25,8 @@ VScode and git
 
 ## **Deployment**
 
-On the local host 
+On the local host
+
 On horeku
 
 
