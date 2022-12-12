@@ -18,9 +18,15 @@ To stop the app : *$^c*
 To exit the environment : *$deactivate*
 
 
+
 ## **Built With**
 
 VScode and git
+
+## **Deployment**
+
+On the local host 
+On horeku
 
 
 ## **Author**
