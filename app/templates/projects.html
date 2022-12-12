@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<link rel="stylesheet" href="{{ url_for('static', filename='projects.css')}}">
+
+
+<body>
+	<section>
+	<div class="container">
+		<div class="card">
+			<div class="face face1">
+					<div class="content">
+						<img src="{{ url_for('static', filename='images/personal_logo.png')}}">
+						<!--img src="../static/images/personal_logo.png"--->
+						<h3>Personal Website</h3>
+					</div>
+			</div>
+			<div class="face face2">
+	 				<div class="content">
+						<article style="color: #b4b4ce;">Check out my repo.<a href="https://github.com/PaulineG9/Project_1"><i style="font-size:12px" class="fa">&#xf08e;</i></a></article>
+							<!-- <a href="#">Read More</a> -->
+					</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="face face1">
+					<div class="content">
+					<img src="{{ url_for('static', filename= 'images/Govhack.png')}}">
+						<h3>GovHack</h3>
+					</div>
+			</div>
+			<div class="face face2">
+					<div class="content">
+						<p >In Sight, In Mind<br><span>by Ravenous Drop Bears (Honourable mention)</span> </p>
+							<a href="https://2022.hackerspace.govhack.org/projects/in_sight_in_mind">Read More</a>
+					</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="face face1">
+					<div class="content">
+					<img src="{{ url_for('static', filename= 'images/WADISH.png')}}">
+						<h3>Health Hackathon</h3>
+					</div>
+			</div>
+			<div class="face face2">
+					<div class="content">
+						<ul class="learning">
+							<li>Early Sepsis Detection <a class="team"  href="{{ url_for ('wadish')}}">(2022)</a></li>
+							<br>
+							<li>Improving Diabetes Management among children & adolescent <a class="team"  href="{{ url_for ('wadish2')}}">(2021)</a></li>
+						</ul>
+				
+					</div>
+			</div>
+		</div>
+		<div class="card">
+		<div class="face face1">
+				<div class="content content2">
+					<!--img src="{{ url_for('static', filename='images/personal_logo.png')}}"-->
+					<img src="{{ url_for('static', filename= 'images/deep-learning-2.png')}}">
+					<h3>Learnings</h3>
+				</div>
+		</div>
+		<div class="face face2">
+				<div class="content ">
+					<div>
+						<ul class="learning">
+							<li>Machine Learning</li>
+							<li>Advanced SQL</li>
+							<li></li>
+						</ul>
+					</div>
+					<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p> -->
+						<!-- <a href="#">Read More</a> -->
+				</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="face face1">
+				<div class="content content2">
+				<img src="{{ url_for('static', filename= 'images/brain.png')}}">
+					<h3> Info diet</h3>
+				</div>
+		</div>
+		<div class="face face2">
+				<div class="content">
+					<ul class="learning">
+						<li>Indie Hackers <a href="https://podcasts.apple.com/au/podcast/indie-hackers/id1206165808"><i style="font-size:12px" class="fa">&#xf08e;</i></a> </li>
+						<li>The Index Podcast <a href="https://podcasts.apple.com/au/podcast/the-index-podcast/id1572579079"><i style="font-size:12px" class="fa">&#xf08e;</i></a></li>
+						<li>The infinite Monkey Cage <a href="https://podcasts.apple.com/au/podcast/the-infinite-monkey-cage/id343580439"><i style="font-size:12px" class="fa">&#xf08e;</i></a></li>
+						<li>Wordle <a href="https://www.nytimes.com/games/wordle/index.html"><i style="font-size:12px" class="fa">&#xf08e;</i></a></li>
+					</ul>
+
+					<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p> -->
+						<!-- <a href="#">Read More</a> -->
+				</div>
+		</div>
+	</div>
+	<div class="card">
+		<div class="face face1">
+				<div class="content content2">
+				<img src="{{ url_for('static', filename= 'images/communities.png')}}">
+					<h3>Community</h3>
+				</div>
+		</div>
+		<div class="face face2">
+				<div class="content">
+
+					<ul class="learning">
+						<li>Women who Code</li>
+						<li>WADISH</li>
+						<li>Kaleidoscope</li>
+						<li>Onslow Park Tennis Club</li>
+						<li>Tab Family</li>
+					</ul>
+					<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p> -->
+						<!-- <a href="#">Read More</a> -->
+				</div>
+		</div>
+	</div>
+	</div>
+	</section>
+
+   <style>
+      body{
+        
+         background: #0f0c29;
+        
+         font-family: consolas;
+         }
+   </style>
+</body>
+
+{%endblock%}
