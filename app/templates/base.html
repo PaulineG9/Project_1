@@ -92,10 +92,10 @@
                <div id="navbar-right" style="height: 50%;" class="collapse" >
                  
                   <ul>
-                     <li><a class="active" href="#home">Home</a></li>
-                     <li><a href="#skills">Skills</a></li>
-                     <li><a href="#contact">About</a></li>
-                     <li><a href="#about">Contact</a></li>
+                     <li><a class="active" href="#miniskills">Home</a></li>
+                     <li><a href="#projects">Skills</a></li>
+                     <li><a href="#contact">Contact</a></li>
+                     <li><a href="#about">About</a></li>
                
                   </ul>
 
@@ -125,16 +125,26 @@
 
 
          const button = document.querySelector(".menu-toggle");
-         button.addEventListener( "click", () => button.classList.toggle("toggled") ); 
+         button.addEventListener( "click", () => button.classList.toggle("toggled") );
+
+	
+	
+
 		
          // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
          window.onscroll = function() {scrollFunction()};
          
          function scrollFunction() {
          if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 70) {
-            
+             
             document.getElementById("logo").style.fontSize = "25px";
-         } else {
+
+
+
+	    
+         } 
+
+	else {
             
             document.getElementById("logo").style.fontSize = "35px";
          }
@@ -151,7 +161,7 @@
 
 	 <!--Footer-->
     
-	 <section class=" container-footer layout footer" aria-hidden="true" data-section="footer">
+	 <section id="about" class=" container-footer layout footer" aria-hidden="true" data-section="footer">
 		<footer>
 		   <div class="inner-content">
 		      <div class="footer-main">
@@ -160,10 +170,11 @@
 			 </div>
 			 <div class="item-2">
 			       <article class="bottom cavalier" data-theme="lime"><div class="cavalier-content"><h1 aria-label="Frontend Developer"><span aria-hidden="true">Junior<br> Data Scientist<span>.</span></span></h1>
-				<p>I enjoy sifting through information to get valuable insights into the target market.</p></div>
+				<p> Furnished with a background in Actuarial Science. I enjoy sifting through information to get valuable insights into the target market.</p></div>
 				<ul aria-label="Highlights." class="highlights visuallyhidden">
-					<li id="listing">Highly skilled at statistical programming &amp; development</li>
-					<li> Ready to plunge into the unknown to reduce your contigencies</li>
+					<li id="listing">Highly skilled at statistical programming &amp; development.</li>
+					<br>
+					<li> Manipulating data to effectively reduce and manage contigencies. </li>
 				</ul>
 			       </article>   
 			 </div>
@@ -171,8 +182,8 @@
 			 <div class="item-3">
 	  
 			    <ul>
-			       <li><a target="_blank" href="{{ url_for ('projects')}}">My Skills</a></li>
-			       <li><a target="_blank" href="{{ url_for ('resume')}}">My Resume</a></li> 
+			       <li><a  href="{{ url_for ('projects')}}">My Skills</a></li>
+			       <li><a  href="{{ url_for ('resume')}}">My Resume</a></li> 
 			    </ul>
 			 </div>
 		      </div>
