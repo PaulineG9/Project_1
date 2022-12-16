@@ -1,9 +1,9 @@
-*, *::before, *::after{
-	box-sizing:border-box;
+body{
+	font-family: 'Merriweather', serif;
 }
 
 .container{
-	display: block;
+	
 	height: 1200px;
 	color: black;
 
