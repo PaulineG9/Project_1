@@ -8,9 +8,26 @@
    <section class="home" data-section="moja">                
          <div class="highlight">
             <div class="brief">
-               <div><h1 class="side-heading grid-2_title"><span>Hi There,</span>
+               <div><h1 class="side-heading grid-2_title"><span>Hi There, I'm Pauline,</span>
                </h1></div>
-               <div style="font-size: 22px;" class="grid-2_content"> I'm Pauline, a junior data scientist with an actuarial science background, here to develop & <br> deliver innovative data driven solutions.</div>
+               <div style="font-size: 22px;" class="grid-2_content">here to develop & deliver innovative data driven solutions.</div>
+               <div class="strokes">
+               <svg width="100px" height="100px" viewBox="0 0 100 100">
+                  <polyline
+                      style="stroke-linejoin: ;
+                      stroke:#ccf381; stroke-width: 2; fill: none;"
+                      points="30 15, 30 30,  45 30"/>
+
+                  </svg>
+
+                  <svg width="100px" height="100px" viewBox="0 0 100 100">
+                     <polyline
+                         style="stroke-linejoin: ;
+                         stroke:#ccf381; stroke-width: 2; fill: none;"
+                         points="45 15, 45 30,  30 30"/>
+                       
+                     </svg>
+                  </div>
 
             </div>
             </div>
@@ -24,14 +41,14 @@
 
    </section>
 
-   <div class="miniskills">
+   <div  id = "miniskills" class="miniskills">
       <div class="skills" >
          <div  class="headings grid-2_title2" data-aos="fade-right" data-aos-duration="1500">My Skills</div>
          <div class="mini grid-2_content_2" data-aos="fade-right">
-            <div class="mini-item" data-aos="fade-right" data-aos-duration="2000"><i class="gg-terminal" style="margin-bottom:5.5%;color:#ccf381 ;"></i>Programming & coding</div>
-            <div class="mini-item" data-aos="fade-right" data-aos-duration="2000"><i class="gg-list-tree" style="margin-bottom:5.5%;color:#ccf381 ;"></i>Machine Learning</div>
-            <div class="mini-item" data-aos="fade-right" data-aos-duration="2000"><i class="gg-read" style="margin-bottom:6%; color:#ccf381 ;"></i>Data Analytics</div>
-            <div class="mini-item" data-aos="fade-right" data-aos-duration="2000"><i class="gg-cloud" style="color:#ccf381 "></i><br>Web Development</div>
+            <div class="mini-item" data-aos="fade-right" data-aos-duration="1000"><i class="gg-terminal" style="margin-bottom:5.5%;color:#ccf381 ;"></i>Programming & coding</div>
+            <div class="mini-item" data-aos="fade-right" data-aos-duration="1000"><i class="gg-list-tree" style="margin-bottom:5.5%;color:#ccf381 ;"></i>Machine Learning</div>
+            <div class="mini-item" data-aos="fade-right" data-aos-duration="1000"><i class="gg-read" style="margin-bottom:6%; color:#ccf381 ;"></i>Data Analytics</div>
+            <div class="mini-item" data-aos="fade-right" data-aos-duration="1000"><i class="gg-cloud" style="color:#ccf381 "></i><br>Web Development</div>
          
          </div>
       </div>
@@ -45,7 +62,7 @@
    </div>
 
 
-   <div id="skills" class="container" ><!--Start of skills container-->
+   <div id="skills" class="container"  data-section="mbili"><!--Start of skills container-->
    <div class="grid-1_container" data-aos="fade-right" data-aos-duration="4000">
    <div class="grid-1 margin auto">
             <div class="absolute-center"><div><h2 class="grid-2_title2">Data Management & Processing</h2></div>
@@ -69,7 +86,7 @@
    </div>
    </div>
    </div>
-   <div class="legend" data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-delay="2s">
+   <div class="legend" data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="800">
    <div class="frame">
    <div class="lang">
    <ul class="social-contact bottom-icon">
@@ -99,29 +116,32 @@
    </div>
    </div><!--end of skills-->
 
+ 
+   
+
    <!--Top-up skills and competences-->
 
-   <section class="layout top-ups" data-section="tatu">
+   <section  id = 'projects' class="layout top-ups" data-section="tatu">
       <div class="grid-2_container">
          <div class="grid-2">
                      <div class="grid-2_item" data-aos="zoom-in"
                      data-aos-easing="linear"
                      data-aos-duration="600" >
-                     <article class="extra cavalier" data-theme="electric"><div class="cavalier-content"><h3>Projects</h3><p>A few starter projects I've been working on</p></div>
-                        <div><a href="{{ url_for('projects') }}" target="_blank"><button class="grid-2_link link-button_content"><span> See my work &#x279D </span></button></a> </div>
+                     <article class="extra cavalier" data-theme="electric"><div class="cavalier-content"><h3>Projects</h3><p>Case studies and projects I've been working on.</p></div>
+                        <div><a href="{{ url_for('projects') }}"><button class="grid-2_link link-button_content"><span> See my work &#x279D </span></button></a> </div>
                      </article>
                      </div>
                      <div class="grid-2_item" data-aos="zoom-in"
                      data-aos-easing="linear"
                      data-aos-duration="800">
-                     <article class="extra cavalier" data-theme="electric"><div class="cavalier-content"><h3>Learnings</h3><p>My content diet, learnings and discoveries</p></div>
-                        <div><a href="{{ url_for('projects') }}" target="_blank"><button class="grid-2_link link-button_content">Explore &#x279D </span></button></a></div>
+                     <article class="extra cavalier" data-theme="electric"><div class="cavalier-content"><h3>Learnings</h3><p>My content diet, learnings and discoveries.</p></div>
+                        <div><a href="{{ url_for('projects') }}"><button class="grid-2_link link-button_content">Explore &#x279D </span></button></a></div>
                      </article>
                      </div>
                      <div class="grid-2_item" data-aos="zoom-in"
                      data-aos-easing="linear"
                      data-aos-duration="1000">
-                     <article class="extra cavalier" data-theme="electric"><div class="cavalier-content"><h3>Newsletter</h3><p>Dive with me & let's uncover the evolution of Web 3.0 </p></div>
+                     <article class="extra cavalier" data-theme="electric"><div class="cavalier-content"><h3>Newsletter</h3><p>Exploring the evolution of Web 3.0 for sustainability.</p></div>
                         <div class=""><a><button class=" grid-2_link link-button_content"> <span> Coming soon &#x279D </span></button></a></div>
                      </article>
                   
@@ -129,10 +149,11 @@
       </div>
 
       </section>
+
       
       <!--Contact form-->
       
-      <section class="layout contact" data-section="nne">
+      <section id="contact" class="layout contact" data-section="nne">
          <div class="inner-content">
             <article class="inner cavalier">
                {% if success %}
