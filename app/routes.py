@@ -66,8 +66,6 @@ def wadish2():
         return render_template("wadish2021.html")
 
 
-   
-
 if __name__ == "__main__":
         app.run(debug=True)
 
