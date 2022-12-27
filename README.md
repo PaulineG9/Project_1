@@ -19,16 +19,16 @@ To run the app:
 flask run
 ```
 
-To stop the app :```python
+To stop the app : 
+```python
  ^c
 ```
 
 
-To exit the environment : ```python
+To exit the environment : 
+```python
 deactivate
 ```
-
-
 
 
 ## **Built With**
