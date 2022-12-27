@@ -9,15 +9,15 @@ Requires python3, flask,venv and sqlite
 
 ## **Getting Started**
 
-Activate the python virtual environment: ```python
-*$source venv/bin/
-```acivate*
-
-To run the app: ```python
-*$flask run*
+Activate the python virtual environment:  ```python
+*$source venv/bin/acivate*
 ```
 
-To stop the app :```python
+To run the app:	```python
+$flask run
+```
+
+To stop the app : ```python
  *$^c*
 ```
 
