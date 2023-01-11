@@ -15,7 +15,7 @@ app.config.from_object('config.ProductionConfig')
 
 mail = Mail(app)
 db = SQLAlchemy(app)
-Migrate(app, db)
+migrate = Migrate(app, db)
 
 
 # def create_app(config_class=Config):

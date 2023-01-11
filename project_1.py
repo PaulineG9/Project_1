@@ -1,5 +1,2 @@
-from app import app, db
-from app import mail
-
-
+from app import app, db, mail
 
