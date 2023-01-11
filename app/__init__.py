@@ -10,7 +10,7 @@ import logging, os
 app = Flask(__name__)
 
 app.config.from_object(Config)
-app.config.from_object('config.ProductionConfig')
+# app.config.from_object('config.ProductionConfig')
 # app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://xvgcrkgyqhioyd:1b70e8869d3d6451e817962d41046ac35c28cde8189bae8c2da40ac938d6c191@ec2-54-157-79-121.compute-1.amazonaws.com:5432/dev1re8boq3p3u"
 
 mail = Mail(app)
