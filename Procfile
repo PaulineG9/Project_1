@@ -1,1 +1,1 @@
-web: flask db upgrade; flask translate compile; gunicorn paulineg:app
+web: flask db upgrade; flask translate compile; gunicorn paulineg.wsgi
