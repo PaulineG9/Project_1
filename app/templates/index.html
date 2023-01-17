@@ -4,11 +4,11 @@
 
 <link rel="stylesheet" href="{{ url_for('static', filename='index.css')}}">
 
-<body>
+<div id="container">
    <section class="home" data-section="moja">                
          <div class="highlight">
             <div class="brief">
-               <div><h1 class="side-heading grid-2_title"><span>Hi There, I'm Pauline,</span>
+               <div><h1 class="side-heading grid-2_title"><span class="hello">Hi There, I'm Pauline,</span>
                </h1></div>
                <div style="font-size: 22px;" class="grid-2_content">here to develop & deliver innovative data driven solutions.</div>
                <div class="strokes">
@@ -32,7 +32,7 @@
             </div>
             </div>
          <div class="intro">
-            <div data-aos="fade-in" class=" mid-heading "><div class="center"><span >HE<br>LLO</span><span id="opening">.</span></div></div>
+            <div data-aos="fade-in" class=" mid-heading "><div class="center"><span  >HE<br>LLO</span><span id="opening">.</span></div></div>
             </div>
             
       
@@ -45,7 +45,7 @@
       <div class="skills" >
          <div  class="headings grid-2_title2" data-aos="fade-right" data-aos-duration="1500">My Skills</div>
          <div class="mini grid-2_content_2" data-aos="fade-right">
-            <div class="mini-item" data-aos="fade-right" data-aos-duration="1000"><i class="gg-terminal" style="margin-bottom:5.5%;color:#ccf381 ;"></i>Programming & coding</div>
+            <div class="mini-item" data-aos="fade-right" data-aos-duration="1000"><i class="gg-terminal hello" style="margin-bottom:5.5%;color:#ccf381 ;"></i>Programming & coding</div>
             <div class="mini-item" data-aos="fade-right" data-aos-duration="1000"><i class="gg-list-tree" style="margin-bottom:5.5%;color:#ccf381 ;"></i>Machine Learning</div>
             <div class="mini-item" data-aos="fade-right" data-aos-duration="1000"><i class="gg-read" style="margin-bottom:6%; color:#ccf381 ;"></i>Data Analytics</div>
             <div class="mini-item" data-aos="fade-right" data-aos-duration="1000"><i class="gg-cloud" style="color:#ccf381 "></i><br>Web Development</div>
@@ -89,7 +89,7 @@
    <div class="legend" data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="800">
    <div class="frame">
    <div class="lang">
-   <ul class="social-contact bottom-icon">
+   <ul class="social-contact top-icon">
    <li><img src="{{ url_for('static', filename='images/python.png')}}"  style="margin-right:8px ;" width="20" height="20">Python</li>
    <li><img style="margin-right:6px ;" src="{{ url_for('static', filename='images/R-studio.png')}}" alt="R-studio icon" width="25" height="23">R</li>
    <li><img src="{{ url_for('static', filename='images/SQL.png')}}" alt="SQL icon" style="margin-right:8px ;" width="20" height="20">SQL</li>
@@ -106,7 +106,7 @@
    <div class="lang">
 
    <ul class="social-contact legend-icon">
-      <li><img src="{{ url_for('static', filename='images/Flask.png')}}" alt="Girl in a jacket" style="margin-right:4px ;" width="20" height="20">Flask</li>
+      <li><img src="{{ url_for('static', filename='images/Flask.png')}}" alt="Girl in a jacket" style="padding-right:4px ;" width="20" height="20">Flask</li>
       <li><img src="{{ url_for('static', filename='images/REST.png')}}" alt="Girl in a jacket"  style="margin-right:8px ;" width="20" height="20">REST API</li>
    </ul>
    </div>
@@ -167,8 +167,8 @@
                </div>
             </article>
 
-            
-
+         
+      <div>
          
       <form action="{{ url_for('contact') }}" class="contact-form message" id="contactForm" method="post" >
          
@@ -179,8 +179,6 @@
             <div class="mini-message input-group">
                <label style="color:#2e236a" for="fname">Your name</label>
                <input type="text" id="name" name="name" placeholder="Enter your name" required data-validation-required-message="Please enter your name">
-
-            
             </div>
             <div class="mini-message input-group">
                <label style="color:#2e236a" for="fname">Email address</label>
@@ -212,12 +210,13 @@
 
 
          </button>
+      </div>
       </form>
       </div>
       </div>
    </section>
 
-</body>
+</div>
 
 {%endblock%}
 
