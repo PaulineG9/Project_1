@@ -1,0 +1,10 @@
+ca.crt
+ca.key
+ia.key
+server.key
+server.pass.key
+server.crt
+server.csr
+ia.csr
+ia.crt
+.env
