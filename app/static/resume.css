@@ -1,6 +1,6 @@
 body{
 	font-family: 'Merriweather', serif;
-	font-size: medium;
+	font-size: 18px;
 }
 
 .container-fluid{
@@ -36,4 +36,8 @@ h5{
 	color: #4831d4;
 	/* text-decoration: underline; */
 	font-style: italic;
+}
+
+li{
+	font-size: 18px;
 }
